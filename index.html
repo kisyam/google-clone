@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google Clone</title>
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="https://www.google.com/favicon.ico"
+        />
+        <style>
+            * {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+            body {
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+            }
+            .header__navbar {
+                margin-top: 10px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+            .header__item {
+                padding: 10px;
+                font-size: 15px;
+                margin-right: 10px;
+            }
+            .header__item:last-child {
+                width: 43px;
+                height: 43px;
+                font-size: 13px;
+                line-height: 200%;
+                text-align: center;
+                background-color: #512da8;
+                border-radius: 50%;
+                color: white;
+            }
+            .main__screen {
+                height: 80%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .main__image {
+                margin-bottom: 20px;
+            }
+            .main__screen-search {
+                padding: 0 1em;
+                border: 1px solid gainsboro;
+                height: 38px;
+                width: 40%;
+                border-radius: 30px;
+                margin-bottom: 20px;
+            }
+            .main__screen-search:hover {
+                outline: none;
+                border-color: gainsboro;
+                box-shadow: 0 0 10px gainsboro;
+            }
+            .main__screen-search:focus {
+                outline: none;
+                border-color: gainsboro;
+                box-shadow: 0 0 10px gainsboro;
+            }
+            .main__screen-button {
+                display: flex;
+                width: 40%;
+                margin-bottom: 20px;
+                justify-content: center;
+            }
+            .button-search {
+                border: none;
+                font-size: 14px;
+                padding: 8px 13px;
+                background-color: #f8f9fa;
+                color: #202124;
+                border-radius: 5px;
+                margin-right: 15px;
+            }
+            .input[type="button"] {
+                background-color: transparent;
+                border: none;
+            }
+
+            .search-language {
+                color: #5c739b;
+            }
+            .google__offered {
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="header__navbar">
+            <span class="header__item">Gmail</span>
+            <span class="header__item">Images</span>
+            <span class="header__item">
+                <img
+                    src="https://cdn.iconscout.com/icon/free/png-256/free-dots-nine-3604181-3003491.png"
+                    width="20px"
+                />
+            </span>
+            <span class="header__item">연수</span>
+        </header>
+        <main class="main__screen">
+            <img src="./Google.png" alt="" class="main__image" width="275px" />
+            <input type="text" class="main__screen-search" />
+            <div class="main__screen-button">
+                <input
+                    type="button"
+                    class="button-search"
+                    value="Google Search"
+                />
+                <input
+                    type="button"
+                    class="button-search"
+                    value="I'm Feeling Lucky"
+                />
+            </div>
+            <span class="google__offered"
+                >Google offered in: <a class="search-language">한국어</a></span
+            >
+        </main>
+    </body>
+</html>
